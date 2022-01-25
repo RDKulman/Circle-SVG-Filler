@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="./css/index.css">
+
+        <title>SVG Filler</title>
+        
+    </head>
+
+    <body>
+        <section class="svg-filler">
+            <img src="./img/bg-image.png" aria-hidden="true" class="svg-filler__bg">
+            <div class="container">
+                <h2 class="svg-filler__title title title--center">
+                    Some facts and figures
+                </h2>
+                <ul class="list-reset svg-filler__list">
+                    <li class="svg-filler__item">
+                        <div class="fact-item">
+                            <div class="fact-item__info" data-percent="true" data-value="73">
+                                <svg viewBox="-10 -10 320 320" class="fact-item__svg">
+                                    <circle class="circle-progress-bg circle-progress-bg--one" cx="150" cy="150" r="150" stroke-width="15"
+                                        fill="none">
+                                    </circle>
+                                    <circle class="circle-progress circle-progress--one" cx="150" cy="150" r="150" stroke-width="15"
+                                        fill="none">
+                                    </circle>
+                                </svg>
+                                <div class="fact-item__value"></div>
+                            </div>
+                            <span class="fact-item__subtitle">
+                                Totally satisfied clients
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="svg-filler__item">
+                        <div class="fact-item">
+                            <div class="fact-item__info" data-percent="true" data-value="57">
+                                <svg viewBox="-10 -10 320 320" class="fact-item__svg">
+                                    <circle class="circle-progress-bg circle-progress-bg--two" cx="150" cy="150" r="150" stroke-width="15"
+                                        fill="none">
+                                    </circle>
+                                    <circle class="circle-progress circle-progress--two" cx="150" cy="150" r="150" stroke-width="15"
+                                        fill="none">
+                                    </circle>
+                                </svg>
+                                <div class="fact-item__value"></div>
+                            </div>
+                            <span class="fact-item__subtitle">
+                                The fullness of circle
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="svg-filler__item">
+                        <div class="fact-item">
+                            <div class="fact-item__info" data-percent="false" data-value="15736" data-full-value="20000">
+                                <svg viewBox="-10 -10 320 320" class="fact-item__svg">
+                                    <circle class="circle-progress-bg circle-progress-bg--three" cx="150" cy="150" r="150" stroke-width="15"
+                                        fill="none">
+                                    </circle>
+                                    <circle class="circle-progress circle-progress--three" cx="150" cy="150" r="150" stroke-width="15"
+                                        fill="none">
+                                    </circle>
+                                </svg>
+                                <div class="fact-item__value"></div>
+                            </div>
+                            <span class="fact-item__subtitle">
+                                Working hours spent
+                            </span>
+                        </div>
+                    </li>
+
+                    <li class="svg-filler__item">
+                        <div class="fact-item">
+                            <div class="fact-item__info" data-percent="true" data-value="100">
+                                <svg viewBox="-10 -10 320 320" class="fact-item__svg">
+                                    <circle class="circle-progress-bg circle-progress-bg--four" cx="150" cy="150" r="150" stroke-width="15"
+                                        fill="none">
+                                    </circle>
+                                    <circle class="circle-progress circle-progress--four" cx="150" cy="150" r="150" stroke-width="15"
+                                        fill="none">
+                                    </circle>
+                                </svg>
+                                <div class="fact-item__value"></div>
+                            </div>
+                            <span class="fact-item__subtitle">
+                                Succeeded projects
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <script src="./js/index.js"></script>
+    </body>
+</html>
+
+
+<!-- 
+
+    <ul class="list-reset svg-filler__list">
+                <li class="svg-filler__item">
+                    <div class="facts-element">
+                        <div class="facts-element__infoblock" data-percent="true" data-value="57">
+                            <svg class="facts-element__circles-wrapper" viewBox="-10 -10 320 320">
+                                <circle class="circle-progress-bg circle-progress-bg--one" cx="150" cy="150" r="150"
+                                    fill="none" stroke-width="15">
+                                </circle>
+                                <circle class="circle-progress circle-progress--one" cx="150" cy="150" r="150"
+                                    fill="none" stroke-width="15">
+                                </circle>
+                            </svg>
+                            <div class="facts-element__infoblock-value"></div>
+                        </div>
+                        <span class="facts-element__subtitle">
+                            Totally satisfied clients
+                        </span>
+                    </div>
+                </li>
+
+                <li class="svg-filler__item">
+                    <div class="facts-element">
+                        <div class="facts-element__infoblock" data-percent="true" data-value="75">
+                            <svg class="facts-element__circles-wrapper" viewBox="-10 -10 320 320">
+                                <circle class="circle-progress-bg circle-progress-bg--two" cx="150" cy="150" r="150"
+                                    fill="none" stroke-width="15">
+                                </circle>
+                                <circle class="circle-progress circle-progress--two" cx="150" cy="150" r="150"
+                                    fill="none" stroke-width="15">
+                                </circle>
+                            </svg>
+                            <div class="facts-element__infoblock-value"></div>
+                        </div>
+                        <span class="facts-element__subtitle">
+                            Totally satisfied clients
+                        </span>
+                    </div>
+                </li>
+
+                <li class="svg-filler__item">
+                    <div class="facts-element">
+                        <div class="facts-element__infoblock" data-percent="false" data-full-value="10000"
+                            data-value="9696">
+                            <svg class="facts-element__circles-wrapper" viewBox="-10 -10 320 320">
+                                <circle class="circle-progress-bg  circle-progress-bg--three" cx="150" cy="150" r="150"
+                                    fill="none" stroke-width="15">
+                                </circle>
+                                <circle class="circle-progress circle-progress--three" cx="150" cy="150" r="150"
+                                    fill="none" stroke-width="15">
+                                </circle>
+                            </svg>
+                            <div class="facts-element__infoblock-value"></div>
+                        </div>
+                        <span class="facts-element__subtitle">
+                            Totally satisfied clients
+                        </span>
+                    </div>
+                </li>
+
+                <li class="svg-filler__item">
+                    <div class="facts-element">
+                        <div class="facts-element__infoblock" data-percent="true" data-value="33">
+                            <svg class="facts-element__circles-wrapper" viewBox="-10 -10 320 320">
+                                <circle class="circle-progress-bg  circle-progress-bg--four" cx="150" cy="150" r="150"
+                                    fill="none" stroke-width="15">
+                                </circle>
+                                <circle class="circle-progress circle-progress--four" cx="150" cy="150" r="150"
+                                    fill="none" stroke-width="15">
+                                </circle>
+                            </svg>
+                            <div class="facts-element__infoblock-value"></div>
+                        </div>
+                        <span class="facts-element__subtitle">
+                            Totally satisfied clients
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+ -->

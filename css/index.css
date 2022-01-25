@@ -1,0 +1,193 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --color-black: #000;
+    --color-light: #fff;
+    --color-gray: #424551;
+    --color-ebony:#1e212c;
+    --color-storm:#787a80;
+    --color-primary: #ff5a30;
+    --color-mako: #424551;
+    --grid-gap: 30px ;
+}
+    
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/UbuntuRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../fonts/UbuntuBold.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1260px;
+}
+
+.list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    color: var(--color-ebony);
+}
+
+.title--center {
+    text-align: center;
+}
+
+/* ========== settings ========== */
+.svg-filler {
+    position: relative;
+    padding-top: 200px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.svg-filler__bg {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+.svg-filler__title {
+    margin-bottom: 60px;
+}
+
+.svg-filler__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 736px;
+    gap: 48px;
+}
+
+.fact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fact-item__svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.fact-item__info {
+    position: relative;
+    margin-bottom: 20px;
+    width: 148px;
+    height: 148px;
+}
+.fact-item__value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-ebony);
+    transform: translate(-50%, -50%);
+
+}
+
+.fact-item__subtitle {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-ebony);
+}
+
+/* ========== circle settings ========== */
+.circle-progress {
+    position: absolute;
+    transform-origin: center;
+    transform: rotate(270deg) translateX(20px);
+    
+}
+.circle-progress-bg {
+    opacity: 0.3;
+}
+.circle-progress-bg--one {
+    stroke: #f89828;
+}
+.circle-progress-bg--two {
+    stroke: #f52f6e;
+}
+.circle-progress-bg--three {
+    stroke: #5A87fc;
+}
+.circle-progress-bg--four {
+    stroke: #03cea4;
+}
+
+.circle-progress--one {
+    stroke: #f89828;
+}
+.circle-progress--two {
+    stroke: #f52f6e;
+}
+.circle-progress--three {
+    stroke: #5A87fc;
+}
+.circle-progress--four {
+    stroke: #03cea4;
+}
+
+/* ========== media settings ========== */
+@media only screen and (max-width: 768px) {
+    .svg-filler__list {
+        grid-template-rows: auto auto;
+        max-width: 500px;
+    }
+    .svg-filler__item {
+        grid-column:  span 2;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .svg-filler {
+        position: relative;
+        padding: 100px 0;
+        height: auto;
+    }
+    .svg-filler__list {
+        grid-template-rows: auto auto auto auto;
+    }
+    .svg-filler__item {
+        grid-column:  span 4;
+    }
+}
